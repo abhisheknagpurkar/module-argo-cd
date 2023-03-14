@@ -22,9 +22,9 @@ provider "helm" {
   }
 }
 
-resource "kubernetes_namespace" "example" {
+resource "kubernetes_namespace" "argo-ns" {
   metadata {
-    name = "argo"
+    name = "argocd"
   }
 }
 
